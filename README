@@ -1,0 +1,18 @@
+Arduino é meo.
+
+Abstract
+
+When was the last time you lost track of your remote control ? Didn't you wish you could give it a call to ear it ring and therefore track it's whereabouts? Well we found a solution! lets get ride of the Remote Control and use your mobile phone to control every appliance in the house.
+
+Description
+
+The project will use an arduino with an ethernet shield, a web server and a mobile app to remotely control any device in you living room. The application on the mobile will be able to discover the arduino's in the room and remotely control everything. The webserver will be used to store de application and resolve the location and information about the arduinos, while the arduinos will solely solve the problem of interfacing with the TV's. We will use PHP, JS, HTML5 to glue everything together.
+
+URL
+
+https://github.com/codebits172/O-Arduino---meo.
+
+Location
+
+http://codebits.eu/s/gps#coord=-99,0,345,158
+
