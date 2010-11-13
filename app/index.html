@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>	
+		<!-- jqueyr mobile 1.0 Alpha 2
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.css" />
+		<script src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.js"></script>
+-->
+
+		<script src="js/jquery.js"></script>
+		<script src="js/ui.js"></script>
+		<script src="js/engine.js"></script>
+		<script>
+		var ui = new UI("#remotes", "#remote-commands");
+		$(document).ready(function(){
+			ui.bindRemotes();
+		});
+		</script>
+	</head>
+	<body>
+		<div id="remotes">	
+		</div>
+		<div id="remote-commands">
+		</div>
+	</body>
+</html>
