@@ -50,12 +50,12 @@ Engine.prototype.setInterface = function(id,remote){
   * @description: It returns all supported remote controls 
   */
 Engine.prototype.getRemotes = function(fn) {
-	/*$.getJSON("/api?a=GetRemotes", function(data){
+	$.getJSON("/api?a=GetRemotes", function(data){
 		fn(data);	
-		this.saveRemotes(data);
-	});*/
-	fn(remotes);
-	this.setRemotes(remotes);
+		this.setRemotes(data);
+	}.bind(this));
+	/*fn(remotes);
+	this.setRemotes(remotes);*/
 }
 
 /**
@@ -63,11 +63,11 @@ Engine.prototype.getRemotes = function(fn) {
   * @description: It returns all codes for remote control who's ID=<param>
   */
 Engine.prototype.getRemoteCommands = function(_id, fn) {
-	/*$.getJSON("/api?a=GetStandardCodes&standardid="+_id, function(data){
+	$.getJSON("/api?a=GetStandardCommands&standardid="+_id, function(data){
 		fn(data);
-		this.saveRemotes(_id, data);
-	});*/
-	fn(remote_commands);
-	this.setCommands(2, remote_commands);
+		this.setCommands(_id, data);
+	}.bind(this));
+	/*fn(remote_commands);
+	this.setCommands(_id, remote_commands);*/
 }
 
